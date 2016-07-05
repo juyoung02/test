@@ -1,1 +1,30 @@
 # test
+JBoss EWS 설치
+
+1) JBoss EWS 2.1 다운로드 :
+
+]# su -
+]# cd /jboss
+
+2) JBoss EWS 2.1 압축해제 :
+
+]# unzip jboss-ews-httpd-2.1.0-RHEL6-x86_64.zip
+]# rm -f jboss-ews-httpd-2.1.0-RHEL6-x86_64.zip
+
+
+3) postinstall 툴로 경로 설정 :
+]# cd /jboss/jboss-ews2.1/httpd
+]# ./.postinstall
+
+4) JBoss EWS 2.1 실행 :
+]# cd /jboss/jboss-ews2.1/httpd/sbin
+]# ./apachectl start
+
+
+5) httpd.conf 설정 :
+```
+]# cd /jboss/jboss-ews2.1/httpd/conf
+]# vim httpd.conf
+```
+
+ModJK 설정
